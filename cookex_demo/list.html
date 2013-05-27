@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>猪副 - 美食速递</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/common/default.css"/>
+<link rel="stylesheet" type="text/css" href="styles/common/header.css"/>
+<link rel="stylesheet" type="text/css" href="styles/common/footer.css"/>
+<link rel="stylesheet" type="text/css" href="styles/product/list.css" />
+
+<script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="script/product/list.js"></script>
+
+</head>
+
+<body>
+  <!-- 页面头 start -->
+  <header>
+    <!-- 网站信息及快捷接口  start -->
+    <div class="row-fluid nav-top">
+      <div class="container">
+        <span class="span6">
+          <span class="muted">您好，欢迎来到良之隆美食速递！</span>
+          <a href="#" class="text-error">免费注册</a>
+          <span class="text-error">|</span>
+          <a href="#" class="text-error">请登录</a>
+          <a target="_blank" href="http://e.weibo.com/cookex/profile"><img src="images/common/weibo.jpg" class="weibo-pic"></a>
+          <a href="#" class="muted">【区域选择】</a>
+        </span>
+        
+        <span class="span6">
+          <ul class="nav nav-pills pull-right">
+            <li><a href="#" class="muted">我的订单</a></li>
+            <li><span class="muted">&nbsp;|&nbsp;</span></li>
+            <li class="dropdown">
+              <a id="my-order" class="dropdown-toggle text-error" href="#" data-toggle="dropdown">我的账户</a>
+              <ul aria-labelledby="my-order" role="menu" class="dropdown-menu">
+                <li><a href="#">我的订单</a></li>
+                <li><a href="#">我的留言</a></li>
+                <li><a href="#">我的收藏</a></li>
+                <li><a href="#">我的推荐</a></li>
+              </ul>
+            </li>
+            <li><span class="muted">&nbsp;|&nbsp;</span></li>
+            <li><a href="#" class="muted">收藏</a></li>
+            <li><span class="muted">&nbsp;&nbsp;&nbsp;</span></li>
+            <li><a href="#" class="text-error"><strong>报价单</strong></a></li>
+            <li><span class="muted">&nbsp;&nbsp;&nbsp;</span></li>
+            <li><strong class="text-error">订购热线：400-088-1777</strong></li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <!-- 网站信息及快捷接口  end -->
+    
+    <!-- 导航栏  start -->
+    <div class="container">
+        <!-- logo及搜索   start -->
+        <div class="row-fluid header">
+          <div class="span5">
+          	<a href="#" class="fL"><img src="styles/common/image/logo1.png" /></a>
+          	<a href="#" class="fL"><img src="styles/common/image/map.png" /></a>
+            <div class="logoDesc fL">
+            中国最大的食材采购平台
+            <br/>
+            良之隆旗下电子商务网站
+            </div>
+            <div class="clear"></div>
+          </div>
+          
+          <div class="span6 offset1">
+          	<div class="headerSearch">
+              <div class="content">
+                <form class="form-search">                    
+                <div class="searchBar">
+                  <input type="text" value="" class="input-xlarge search-query keyInput" name="keywords">
+                  <button type="submit" class="btn searchBtn">搜索</button>
+                </div>
+                </form>
+                
+                <div class="keyBox">
+                  <div class="keyTitle span2">热卖食材：</div>
+                  <div class="keyList span10">
+                  	<a href="#" class="muted">泰国</a>
+                  	<a href="#" class="muted">香虾</a>
+                  	<a href="#" class="muted">印尼水产</a>
+                  	<a href="#" class="muted">河虾仁</a>
+                  	<a href="#" class="muted">小八爪</a>
+                  	<a href="#" class="muted">鸭</a>
+                  	<a href="#" class="muted">鹅</a>
+                  	<a href="#" class="muted">牛</a>
+                  	<a href="#" class="muted">虾</a>
+                  	<a href="#" class="muted">鱼</a>
+                  	<a href="#" class="muted">贝</a>
+                  	<a href="#" class="muted">牛仔骨</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- logo及搜索   end -->
+        
+        <!-- 导航  start -->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <ul class="nav">
+              <li class="active"><a href="#" class="mainPage">首页</a></li>
+              <li class="divider-vertical"></li>
+              <li ><a href="#">食材分类</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#">天天特价</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#">新品上市&nbsp;<img src="images/icons/new.gif" /></a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#">活动专区&nbsp;<img src="images/icons/hot.gif" /></a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#">积分商城</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#"><img src="images/icons/cookex108.png" />&nbsp;创意菜式</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#">杂志在线</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#" class="catHref"><img src="images/icons/cat_l.png" />&nbsp;购物车（0件商品）</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- 导航  end -->
+        
+        <!-- 图标连接  start -->
+        <div class="navbar iconNavi">
+          <div class="navbar-inner">
+            <ul class="nav">
+              <li><a href="#"><img src="styles/common/image/menu-1.jpg" /></a></li>
+              <li><a href="#"><img src="styles/common/image/menu-2.jpg" /></a></li>
+              <li><a href="#"><img src="styles/common/image/menu-3.jpg" /></a></li>
+              <li><a href="#"><img src="styles/common/image/menu-4.jpg" /></a></li>
+              <li><a href="#"><img src="styles/common/image/menu-5.jpg" /></a></li>
+              <li><a href="#"><img src="styles/common/image/menu-6.jpg" /></a></li>
+              <li><a href="#"><img src="styles/common/image/menu-7.jpg" /></a></li>
+              <li><a href="#"><img src="styles/common/image/menu-8.jpg" /></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- 图标连接  end -->
+        
+    </div>
+    <!-- 导航栏  end -->
+  </header>
+  <!-- 页面头  end -->
+  
+  <!-- 页面主体  end -->
+  <div class="container wrap">
+    <!-- 面包屑   start -->
+    <div class="row-fluid crumb">
+      <ul class="breadcrumb">
+        <li><img src="images/icons/icon3.gif" class="crumbIcon" />当前位置：</li>
+        <li><a href="#">食材分类</a><span class="divider">&gt;</span></li>
+        <li><a href="#">食材原料</a><span class="divider">&gt;</span></li>
+        <li><a href="#">肉禽类</a><span class="divider">&gt;</span></li>
+        <li class="active">猪副</li>
+      </ul>
+    </div>
+    <!-- 面包屑   end -->
+    
+    
+    <!-- 侧边栏及列表   start -->
+    <div class="row-fluid">
+      <div id="sidebar" class="span3 sidebar border">
+        <div id="foodStyle" class="foodStyle">
+          <div class="title">食材分类</div>
+          <div class="accordion-group contant">
+            <div class="accordion-heading">
+              <a href="#restaurantStyle" data-parent="#foodStyle" data-toggle="collapse" class="accordion-toggle collapsed">餐厅类型</a>
+            </div>
+            <div id="restaurantStyle" class="accordion-body in collapse" style="height: auto;">
+              <div class="accordion-inner">
+                <ul class="nav nav-list">
+                  <li><a href="#">中餐馆食材</a></li>
+                  <li><a href="#">西餐厅食材</a></li>
+                  <li><a href="#">咖啡简餐食材</a></li>
+                  <li><a href="#">自助餐厅食材</a></li>
+                  <li><a href="#">日韩料理食材</a></li>
+                  <li><a href="#">火锅豆捞食材</a></li>
+                  <li><a href="#">烧烤店食材</a></li>
+                  <li><a href="#">其他类食材</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-group contant">
+            <div class="accordion-heading">
+              <a href="#material" data-parent="#foodStyle" data-toggle="collapse" class="accordion-toggle collapsed">食材原料</a>
+            </div>
+            <div id="material" class="accordion-body in collapse" style="height: auto;">
+              <div class="accordion-inner">
+                <ul class="nav nav-list">
+                  <li><a href="#">肉禽类</a></li>
+                  <li><a href="#">水产类</a></li>
+                  <li><a href="#">调理类</a></li>
+                  <li><a href="#">蔬果干货</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="span9">
+        <div class="row-fluid filter border">
+          <dl class="dl-horizontal">
+            <dt>品牌:</dt>
+            <dd>
+              <div class="keyList">
+                <a href="#" class="muted active">全部</a>
+                <a href="#" class="muted">大厨好帮手</a>
+                <a href="#" class="muted">海亚</a>
+                <a href="#" class="muted">唐隆</a>
+                <a href="#" class="muted">恒隆</a>
+                <a href="#" class="muted">东台</a>
+              </div>
+            </dd>
+          </dl>
+          <dl class="dl-horizontal">
+            <dt>价格:</dt>
+            <dd>
+              <div class="keyList">
+                <a href="#" class="muted active">全部</a>
+                <a href="#" class="muted">10 - 110</a>
+                <a href="#" class="muted">110 - 210</a>
+                <a href="#" class="muted">210 - 310</a>
+                <a href="#" class="muted">310 - 410</a>
+                <a href="#" class="muted">410 - 510</a>
+                <a href="#" class="muted">510 - 610</a>
+                <a href="#" class="muted">610 - 710</a>
+                <a href="#" class="muted">710 - 810</a>
+              </div>
+            </dd>
+          </dl>
+        </div>
+        
+        <div class="row-fluid displayStyle border">
+          <dl class="dl-horizontal ">
+            <dt>排序:</dt>
+            <dd>
+              <div class="pull-left sort">
+                <a href="#" class="muted border active">上架由近到远</a>
+                <a href="#" class="muted border">价格由低到高</a>
+                <a href="#" class="muted border">更新由近到远</a>
+              </div>
+              <div class="pull-right show">
+                <span class="muted">显示方式：</span>
+                <a href="#" class=""><img src="images/icons/icon4.gif" /></a>
+                <a href="#" class=""><img src="images/icons/icon5.gif" /></a>
+              </div>
+            </dd>
+          </dl>
+        </div>
+        
+        
+        <div class="row-fluid">
+          <ul class="thumbnails productList">
+            <li class="span4">
+              <div class="thumbnail">
+                <img src="images/product/product4.jpg" />
+                <div class="caption">
+                  <a href="#" class="muted">东台四之海熟乳猪（5斤左右）</a>
+                  <p class="text-error">本店价：￥18.00元</p>
+                </div>
+              </div>
+            </li>
+            
+            
+            <li class="span4">
+              <div class="thumbnail">
+                <img src="images/product/product1.jpg" />
+                <div class="caption">
+                  <a href="#" class="muted">东台四之海熟乳猪（5斤左右）</a>
+                  <p class="text-error">本店价：￥18.00元</p>
+                </div>
+              </div>
+            </li>
+            
+            
+            <li class="span4">
+              <div class="thumbnail">
+                <img src="images/product/product2.jpg" />
+                <div class="caption">
+                  <a href="#" class="muted">东台四之海熟乳猪（5斤左右）</a>
+                  <p class="text-error">本店价：￥18.00元</p>
+                </div>
+              </div>
+            </li>
+            
+            
+            <li class="span4">
+              <div class="thumbnail">
+                <img src="images/product/product3.jpg" />
+                <div class="caption">
+                  <a href="#" class="muted">东台四之海熟乳猪（5斤左右）</a>
+                  <p class="text-error">本店价：￥18.00元</p>
+                </div>
+              </div>
+            </li>
+            
+            
+            <li class="span4">
+              <div class="thumbnail">
+                <img src="images/product/product2.jpg" />
+                <div class="caption">
+                  <a href="#" class="muted">东台四之海熟乳猪（5斤左右）</a>
+                  <p class="text-error">本店价：￥18.00元</p>
+                </div>
+              </div>
+            </li>
+            
+            
+            <li class="span4">
+              <div class="thumbnail">
+                <img src="images/product/product3.jpg" />
+                <div class="caption">
+                  <a href="#" class="muted">东台四之海熟乳猪（5斤左右）</a>
+                  <p class="text-error">本店价：￥18.00元</p>
+                </div>
+              </div>
+            </li>
+            
+            
+          </ul>
+        </div>
+        
+        
+        <div class="row-fluid page">
+          <div class="pageInfo pull-left">
+          总计<b class="text-error">60</b>个记录，共<b class="text-error">2</b> 页
+          </div>
+          <div class="pagination pagination-small pull-right">
+            <ul>
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li class=""><a href="#">2</a></li>
+            <li class=""><a href="#">&raquo;</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    <!-- 侧边栏及列表   end -->
+    
+  </div>
+  <!-- 页面主体  end -->
+  
+  
+  <!-- footer  start -->
+  <footer class="footer">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span2">
+            <img src="styles/common/image/connect.gif" />
+          </div>
+          <div class="span2 text-center textLinks">
+            <div class="title"><img src="images/icons/icon6.gif" /><b>购物指南</b></div>
+            <div class="content">
+            	<a href="#" class="muted block">用户注册</a>
+            	<a href="#" class="muted block">订购流程</a>
+            	<a href="#" class="muted block">找回密码</a>
+            	<a href="#" class="muted block">会员等级</a>
+            	<a href="#" class="muted block">积分规则</a>
+            	<a href="#" class="muted block">热点问题</a>
+            </div>
+          </div>
+          <div class="span2 text-center textLinks">
+            <div class="title"><img src="images/icons/icon7.gif" /><b>购物指南</b></div>
+            <div class="content">
+            	<a href="#" class="muted block">用户注册</a>
+            	<a href="#" class="muted block">订购流程</a>
+            	<a href="#" class="muted block">找回密码</a>
+            	<a href="#" class="muted block">会员等级</a>
+            	<a href="#" class="muted block">积分规则</a>
+            	<a href="#" class="muted block">热点问题</a>
+            </div>
+          </div>
+          <div class="span2 text-center textLinks">
+            <div class="title"><img src="images/icons/icon8.gif" /><b>购物指南</b></div>
+            <div class="content">
+            	<a href="#" class="muted block">用户注册</a>
+            	<a href="#" class="muted block">订购流程</a>
+            	<a href="#" class="muted block">找回密码</a>
+            	<a href="#" class="muted block">会员等级</a>
+            	<a href="#" class="muted block">积分规则</a>
+            	<a href="#" class="muted block">热点问题</a>
+            </div>
+          </div>
+          <div class="span2 text-center textLinks">
+            <div class="title"><img src="images/icons/icon9.gif" /><b>购物指南</b></div>
+            <div class="content">
+            	<a href="#" class="muted block">用户注册</a>
+            	<a href="#" class="muted block">订购流程</a>
+            	<a href="#" class="muted block">找回密码</a>
+            	<a href="#" class="muted block">会员等级</a>
+            	<a href="#" class="muted block">积分规则</a>
+            	<a href="#" class="muted block">热点问题</a>
+            </div>
+          </div>
+          <div class="span2 text-center textLinks">
+            <div class="title"><img src="images/icons/icon10.gif" /><b>购物指南</b></div>
+            <div class="content">
+            	<a href="#" class="muted block">用户注册</a>
+            	<a href="#" class="muted block">订购流程</a>
+            	<a href="#" class="muted block">找回密码</a>
+            	<a href="#" class="muted block">会员等级</a>
+            	<a href="#" class="muted block">积分规则</a>
+            	<a href="#" class="muted block">热点问题</a>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="row-fluid">
+          <img src="images/common/service.gif" />
+        </div>
+        
+        <div class="row-fluid">
+          <div class="span2">
+            <a href="#" class="muted block"><img src="images/common/link1.gif" /></a>
+          </div>
+          <div class="span2">
+            <a href="#" class="muted block"><img src="images/common/link2.gif" /></a>
+          </div>
+          <div class="span2">
+            <a href="#" class="muted block"><img src="images/common/link3.gif" /></a>
+          </div>
+          <div class="span2">
+            <a href="#" class="muted block"><img src="images/common/link4.gif" /></a>
+          </div>
+          <div class="span2">
+            <a href="#" class="muted block"><img src="images/common/link5.gif" /></a>
+          </div>
+          <div class="span2">
+            <a href="#" class="muted block"><img src="images/common/link6.gif" /></a>
+          </div>
+        </div>
+        
+        
+        <div class="row-fluid text-center">
+          <p>
+          © 2011-2013 【美食速递网】 版权所有，并保留所有权利。
+          </p>
+          <p>
+          武汉市江岸区沿江大道227号江景大厦A栋23层 Tel: 400-088-1777 
+          </p>
+          <p>
+          E-mail: liuhui@lzl98.com,qiucong@lzl98.com,chenjuan@lzl98.com,183883145@qq.com
+          </p>
+          <p>
+          ICP备案证书号:沪ICP备11040360号
+          </p>
+        </div>
+        
+        
+      </div>
+    </footer>
+  <!-- footer  end -->
+  
+</body>
+</html>

@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/* top nav --- start */
+.nav-top{
+	background:#FFF;
+	border-bottom:1px solid #ccc;
+}
+
+.weibo-pic{
+	margin-bottom:3px;
+}
+
+.nav-top .nav{
+	padding:0px;
+	margin:0px;
+}
+
+.nav-top .nav-pills li a{
+	border-radius: 0px;
+	line-height:20px;
+	padding:0px;
+    margin: 0px;
+}
+
+.nav-top .nav-pills li a:hover{
+	background:none;
+	color: #C60C0D;
+    text-decoration: underline;
+}
+
+.nav-top .nav-pills li a:focus{
+	color: #C60C0D;
+}
+
+#my-order{
+	background:url(../../images/icons/icon1.gif) right center no-repeat;
+	padding-right:20px;
+}
+
+#my-order:focus{
+	background:url(../../images/icons/icon2.gif) right center no-repeat;
+}
+
+.nav-top .nav-pills .dropdown-menu{
+	min-width: 70px;
+}
+
+.nav-top .nav-pills .dropdown-menu li a{
+	padding-left:5px;
+	padding-right:5px;
+}
+/* top nav --- end */
+
+
+/* navi bar --- start */
+.header{
+	margin-top:8px;
+}
+
+.logoDesc{
+	padding-top:10px;
+}
+
+.headerSearch{
+	margin-top: 10px;
+}
+
+.headerSearch .form-search{
+	margin-bottom: 5px;
+}
+
+.headerSearch .keyInput{
+	background:none;
+	border:1px solid #F90;
+	border-radius:6px;
+	height:30px;
+	width:320px;
+	padding:0px 10px 0px 10px;
+}
+
+.headerSearch .searchBtn{
+	background:url(image/searchBtnBG01.gif) 0px 0px no-repeat;
+	border:none;
+	width:116px;
+	height:32px;
+	text-indent:-9999px;
+	padding:0px;
+}
+
+.navbar{
+	background:url(image/navi_bg.png) 0px 0px no-repeat;
+	border-bottom: 5px solid #FF8100;
+	height:40px;
+	margin-top:5px;
+	margin-bottom:0px;
+}
+
+.navbar .navbar-inner{
+	background:none;
+	border:none;
+	box-shadow:none;
+}
+
+.navbar .nav li a{
+	font-size: 15px;
+	color: #785D32;
+	padding:10px 11px;
+}
+
+.navbar .nav .active a, .navbar .nav .active a:hover, .navbar .nav .active a:focus{
+	background:none;
+	box-shadow:none;
+	color:#FF8100;
+}
+
+.navbar .nav li a.catHref{
+	font-size: 13px;
+}
+
+.navbar .divider-vertical{
+	margin:0px;
+	border-left: 1px solid #ccc;
+	border-right: none;
+	height:20px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+/* navi bar --- end */
+
+
+
+/* icon navi bar --- end */
+.iconNavi{
+	background:url(image/icon_navi_bg.jpg) 0px -4px no-repeat;
+	border: 1px solid #EAEAEA;
+	height:62px;
+}
+
+.iconNavi .nav li a{
+	padding:6px 4px 0px 4px;
+}
+
+/* icon navi bar --- end */
+
+
